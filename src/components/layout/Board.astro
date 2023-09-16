@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { type CollectionEntry } from "astro:content";
 type Props = {
-  about: CollectionEntry<"es">[];
+  about: CollectionEntry<"about">[];
 };
 const { about } = Astro.props;
 ---
@@ -10,7 +10,7 @@ const { about } = Astro.props;
 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
   {
     about.map((board) => {
-      const route = `/PaDemo/about/${board.id}`;
+      const route = `/PaDemo/about/${board.slug}`;
       return (
         <>
           <a

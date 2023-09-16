@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Mision from "@components/layout/Mision.astro";
 import Board from "@components/layout/Board.astro";
 import { getCollection } from "astro:content";
-const about = await getCollection("es");
+const about = await getCollection("about");
 ---
 
 <Layout title="About">

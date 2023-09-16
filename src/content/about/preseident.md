@@ -1,10 +1,9 @@
 ---
-id: 02
 title: Jorge Torres Preciado
-position:
-cover: ""
-coverAlt: ""
-email:
+position: Presidente
+cover: "./images/jorge.webp"
+coverAlt: "Imagen"
+email: jorge@projectamigo.org
 ---
 
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
