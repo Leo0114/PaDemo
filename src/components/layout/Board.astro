@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import { type CollectionEntry } from "astro:content";
+type Props = {
+  about: CollectionEntry<"es">[];
+};
+const { about } = Astro.props;
+---
+
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+  {
+    about.map((board) => {
+      const route = `/PaDemo/about/${board.id}`;
+      return (
+        <>
+          <a
+            href={route}
+            class="rounded-lg border shadow-md bg-slate-800/50 border-slate-700/50 hover:scale-105 hover:bg-slate-800 hover:border-slate-500 transition flex flex-col"
+          >
+            <picture class="flex justify-center p-4">
+              <Image
+                class="rounded-lg  w-[300px] h-[200px] object-cover transition-all duration-200"
+                transition:name="img"
+                transition:persist
+                src={board.data.cover}
+                alt={board.data.coverAlt}
+                quality={"mid"}
+                format="avif"
+                loading={"lazy"}
+              />
+            </picture>
+
+            <div class="p-4 flex-grow mx-auto text-center">
+              <h2 class=" text-xl font-bold tracking-tight text-white">
+                {board.data.title}
+              </h2>
+            </div>
+          </a>
+        </>
+      );
+    })
+  }
+</div>

@@ -1,0 +1,56 @@
+---
+const about = [
+  {
+    title: "Servicio",
+    text: "Brindar oportunidades para que voluntarios de países desarrollados brinden un valioso servicio humanitario y se hagan amigos de niños y jóvenes desfavorecidos en México.",
+  },
+  {
+    title: "Acceso",
+    text: "Ayudar a los niños desfavorecidos y marginados del centro-oeste de México a alcanzar su máximo potencial facilitando la educación y proporcionando apoyo material, actividades de enriquecimiento y servicios de salud que de otra manera no están disponibles para ellos.",
+  },
+
+  {
+    title: "Amistad",
+    text: "Crear y fomentar la amistad y el entendimiento entre niños y adultos de países desarrollados y sus pares en Colima, México.",
+  },
+];
+---
+
+<div class="py-12 max-w-[1400px] mx-auto prose">
+  <div class="text-center xl:prose-xl">
+    <h1 class="text-3xl md:text-5xl font-semibold text-slate-300">
+      Sobre nosotros
+    </h1>
+  </div>
+
+  <h3 class="font-extrabold text-xl my-4 text-slate-300 xl:prose-xl">
+    Declaración de la misión de Project Amigo
+  </h3>
+
+  <div>
+    <section class="text-center">
+      <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+        {
+          about.map((a) => (
+            <div class="mb-12 md:mb-0 border p-4 rounded-lg border-slate-300/50 text-slate-300">
+              <h5 class="mb-4 text-lg font-bold text-indigo-500">{a.title}</h5>
+              <p>{a.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <p class="prose-xl text-slate-300">
+      La educación y la alfabetización son claves poderosas para permitir un
+      futuro más brillante para los niños del mundo, que a su vez benefician a
+      las naciones en las que viven. Durante casi tres décadas, el Proyecto
+      Amigo ha ayudado a los niños rurales en México a continuar su educación
+      formal hasta el nivel universitario inclusive. Existente desde 1984, y
+      formalmente como una organización benéfica sin fines de lucro 501 (c) (3)
+      estadounidense desde 1996, Project Amigo ofrece becas educativas, apoyo
+      material, actividades de enriquecimiento y atención médica preventiva y
+      correctiva a niños y jóvenes desfavorecidos en el estado de Colima.
+    </p>
+  </div>
+</div>
