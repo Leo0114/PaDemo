@@ -1,4 +1,5 @@
 ---
+id: 02
 title: Jorge Torres Preciado
 position: Presidente
 cover: "./images/jorge.webp"

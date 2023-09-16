@@ -8,7 +8,10 @@ const about = await getCollection("about");
 
 <Layout title="About">
   <Mision />
-  <div>
+  <div class="mx-auto max-w-[1400px] mb-12">
+    <h1 class="font-extrabold text-xl my-4 text-indigo-500 xl:prose-xl">
+      The Projec Amigo México Board
+    </h1>
     <Board about={about} />
   </div>
 </Layout>

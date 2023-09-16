@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   const paths = about.map((aba) => {
     return {
       params: {
-        slug: aba.id,
+        slug: aba.slug,
       },
       props: {
         aba,
@@ -24,7 +24,7 @@ const { aba } = Astro.props;
 
 <Layout2 title={aba.data.title}>
   <Return />
-  <section class="mx-auto lg:w-10/12 w-10/12 h-screen max-w-[1400px] pt-20">
+  <section class="mx-auto lg:w-10/12 w-10/12 h-screen max-w-[1400px] pt-12">
     <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
         <Image
@@ -47,8 +47,13 @@ const { aba } = Astro.props;
           {aba.data.title}
         </h1>
         <h1>{aba.data.position}</h1>
+        <a
+          href="mailto:jorge@projectamigo.org"
+          target="_blank"
+          class="text-indigo-600 py-2">{aba.data.email}</a
+        >
         <p
-          class="prose prose-2xl mb-8 leading-relaxed text-lg text-justify text-slate-300"
+          class="prose-2xl mb-8 leading-relaxed text-lg text-justify text-slate-300"
         >
           {aba.body}
         </p>
