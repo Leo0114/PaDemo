@@ -7,38 +7,40 @@ type Props = {
 const { about } = Astro.props;
 ---
 
-<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-  {
-    about.map((board) => {
-      const route = `/PaDemo/about/${board.slug}`;
-      return (
-        <>
-          <a
-            href={route}
-            class="rounded-lg border shadow-md bg-slate-800/50 border-slate-700/50 hover:scale-105 hover:bg-slate-800 hover:border-slate-500 transition flex flex-col"
-          >
-            <picture class="flex justify-center p-4">
-              <Image
-                class="rounded-lg  w-[300px] h-[200px] object-cover transition-all duration-200"
-                transition:name="img"
-                transition:persist
-                src={board.data.cover}
-                alt={board.data.coverAlt}
-                quality={"mid"}
-                format="avif"
-                loading={"lazy"}
-              />
-            </picture>
+<div class="text-center lg:text-left">
+  <div class="grid gap-6 md:grid-cols-3 xl:gap-x-12">
+    {
+      about.map((board) => {
+        const route = `/PaDemo/about/${board.slug}`;
+        return (
+          <div class="mb-6 lg:mb-0">
+            <a
+              href={route}
+              class=" relative block rounded-lg p-6  border shadow-md bg-slate-800/50 border-slate-700/50 hover:scale-105 hover:bg-slate-800 hover:border-slate-500 transition "
+            >
+              <div class="flex-row items-center lg:flex">
+                <picture class="w-full shrink-0 grow-0 basis-auto lg:w-5/12 lg:pr-6 ">
+                  <Image
+                    class="mb-6 w-full lg:mb-0 rounded-lg"
+                    transition:name="img"
+                    transition:persist
+                    src={board.data.cover}
+                    alt={board.data.coverAlt}
+                    quality={"mid"}
+                    format="avif"
+                    loading={"lazy"}
+                  />
+                </picture>
 
-            <div class="p-4 flex-grow mx-auto text-center">
-              <h2 class=" text-xl font-bold tracking-tight text-white">
-                {board.data.title}
-              </h2>
-              <span>{board.data.position}</span>
-            </div>
-          </a>
-        </>
-      );
-    })
-  }
+                <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                  <h2 class="mb-2 text-xl font-bolde">{board.data.title}</h2>
+                  <p class="mb-4 text-indigo-400">{board.data.position}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        );
+      })
+    }
+  </div>
 </div>
