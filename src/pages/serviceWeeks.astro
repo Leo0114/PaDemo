@@ -1,11 +1,21 @@
 ---
-import TimeLine from "@components/layout/TimeLine.astro";
 import Layout from "../layouts/Layout.astro";
-import Botton from "@components/layout/Botton.astro";
-import Fechas from "@components/layout/Fechas.astro";
+import TimeLine from "@components/weeks/TimeLine.astro";
+import Fechas from "@components/weeks/Fechas.astro";
+import Weeks from "@components/weeks/Weeks.astro";
+import { getCollection } from "astro:content";
+const weeks = await getCollection("weeks");
 ---
 
 <Layout title="Service Weeks">
   <Fechas />
-  <TimeLine />
+  <Weeks weeks={weeks} />
+  <div class="py-8">
+    <h1
+      class="font-extrabold text-xl my-4 text-indigo-500 xl:prose-2xl text-center"
+    >
+      Todas las fechas del año
+    </h1>
+    <TimeLine />
+  </div>
 </Layout>

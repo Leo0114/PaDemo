@@ -1,0 +1,65 @@
+---
+import Botton from "@components/layout/Botton.astro";
+import Return from "@components/layout/Return.astro";
+
+import Layout2 from "@layouts/Layout2.astro";
+import { Image } from "astro:assets";
+import { type CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const weeks = await getCollection("weeks");
+  const paths = weeks.map((wek) => {
+    return {
+      params: {
+        slug: wek.slug,
+      },
+      props: {
+        wek,
+      },
+    };
+  });
+  return paths;
+}
+type Props = { wek: CollectionEntry<"weeks"> };
+const { wek } = Astro.props;
+---
+
+<Layout2 title={wek.data.title}>
+  <Return link="/PaDemo/serviceWeeks" />
+  <div class="container my-24 mx-auto md:px-6 prose-xl">
+    <section class="mb-32 items-center">
+      <Image
+        src={wek.data.cover}
+        class="mb-6 lg:w-1/3 w-fit mx-auto rounded-lg shadow-lg dark:shadow-black/20"
+        transition:name="img"
+        alt={wek.data.coverAlt}
+        quality={"mid"}
+        format="avif"
+        loading={"lazy"}
+      />
+
+      <div class="mx-auto px-4 text-center">
+        <Botton name="Registrar aquí" />
+      </div>
+      <div class="mb-6 flex items-center">
+        <div>
+          <p class="text-indigo-400">{wek.data.dia}</p>
+          <p>Encargado: {wek.data.encargado}</p>
+          <a
+            target="_blank"
+            href=`mailto:${wek.data.correoEncargado}`
+            class="font-medium text-indigo-400 underline"
+            >{wek.data.correoEncargado}</a
+          >
+        </div>
+      </div>
+      <h1 class="mb-6 text-3xl font-extrabold">
+        {wek.data.title}
+      </h1>
+
+      <p>
+        {wek.body}
+      </p>
+    </section>
+  </div>
+</Layout2>
