@@ -34,15 +34,15 @@ const { aba } = Astro.props;
           format="avif"
           alt={aba.data.coverAlt}
           src={aba.data.cover}
-          class="object-cover object-center rounded-lg shadow-md"
+          class="object-cover object-center rounded-lg shadow-md mx-auto"
         />
       </div>
 
       <div
-        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+        class="mx-auto lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
       >
         <h1
-          class="title-font sm:text-4xl text-3xl mb-4 font-medium text-slate-50"
+          class="title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-slate-300 text-slate-950"
         >
           {aba.data.title}
         </h1>
@@ -50,10 +50,10 @@ const { aba } = Astro.props;
         <a
           href="mailto:jorge@projectamigo.org"
           target="_blank"
-          class="text-indigo-600 py-2">{aba.data.email}</a
+          class="text-indigo-600 dark:text-indigo-400 py-2">{aba.data.email}</a
         >
         <p
-          class="prose-2xl mb-8 leading-relaxed text-lg text-justify text-slate-300"
+          class="prose-2xl mb-8 leading-relaxed text-lg text-justify dark:text-slate-300 text-slate-950"
         >
           {aba.body}
         </p>

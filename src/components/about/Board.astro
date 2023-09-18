@@ -7,7 +7,9 @@ type Props = {
 const { about } = Astro.props;
 ---
 
-<div class="text-center lg:text-left">
+<div
+  class="text-center lg:text-left max-w-[1400px] mx-auto transition-all duration-300 dark:text-slate-300 text-slate-950"
+>
   <div class="grid gap-6 md:grid-cols-3 xl:gap-x-12">
     {
       about.map((board) => {
@@ -16,7 +18,9 @@ const { about } = Astro.props;
           <div class="mb-6 lg:mb-0">
             <a
               href={route}
-              class=" relative block rounded-lg p-6  border shadow-md bg-slate-800/50 border-slate-700/50 hover:scale-105 hover:bg-slate-800 hover:border-slate-500 transition "
+              class=" relative block rounded-lg p-6  border shadow-md
+               bg-slate-300/10  dark:hover:bg-slate-300/20 border-slate-200/50 hover:scale-105 dark:border-slate-300/50
+                hover:bg-slate-200 dark:bg-slate-700/50 hover:border-slate-300/50 transition-all "
             >
               <div class="flex-row items-center lg:flex">
                 <picture class="w-full shrink-0 grow-0 basis-auto lg:w-5/12 lg:pr-6 ">
@@ -34,7 +38,9 @@ const { about } = Astro.props;
 
                 <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
                   <h2 class="mb-2 text-xl font-bolde">{board.data.title}</h2>
-                  <p class="mb-4 text-indigo-400">{board.data.position}</p>
+                  <p class="mb-4 text-indigo-600 dark:text-indigo-400">
+                    {board.data.position}
+                  </p>
                 </div>
               </div>
             </a>

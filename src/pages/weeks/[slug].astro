@@ -26,7 +26,9 @@ const { wek } = Astro.props;
 
 <Layout2 title={wek.data.title}>
   <Return link="/PaDemo/serviceWeeks" />
-  <div class="container my-24 mx-auto md:px-6 prose-xl">
+  <div
+    class="container my-24 mx-auto md:px-6 prose-xl transition-all duration-300 dark:text-slate-300 text-slate-950"
+  >
     <section class="mb-32 items-center">
       <Image
         src={wek.data.cover}
@@ -43,12 +45,12 @@ const { wek } = Astro.props;
       </div>
       <div class="mb-6 flex items-center">
         <div>
-          <p class="text-indigo-400">{wek.data.dia}</p>
+          <p class="dark:text-indigo-400 text-indigo-600">{wek.data.dia}</p>
           <p>Encargado: {wek.data.encargado}</p>
           <a
             target="_blank"
             href=`mailto:${wek.data.correoEncargado}`
-            class="font-medium text-indigo-400 underline"
+            class="font-medium dark:text-indigo-400 text-indigo-600 underline"
             >{wek.data.correoEncargado}</a
           >
         </div>
