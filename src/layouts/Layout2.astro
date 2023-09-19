@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 import Navbar from "@components/Navbar.astro";
 import Footer from "@components/Footer.astro";
+import AstroNav from "@components/AstroNav.astro";
 ---
 
 <!doctype html>
@@ -23,6 +24,7 @@ import Footer from "@components/Footer.astro";
   <body
     class="dark:bg-slate-800 dark:text-slate-300 bg-slate-50 text-slate-800"
   >
+    <AstroNav />
     <main class="px-4 mx-auto md:px6 container">
       <slot />
     </main>
