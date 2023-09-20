@@ -1,8 +1,14 @@
 ---
+import Promo from "@components/layout/Promo.astro";
 import Layout from "../layouts/Layout.astro";
 import ImageSlider from "@components/layout/ImageSlider";
+import Banner from "@components/layout/Banner.astro";
 ---
 
 <Layout title="Home">
-  <ImageSlider client:load />
+  <div class="px-4 mx-auto md:px-6">
+    <Promo />
+    <ImageSlider client:load />
+    <Banner />
+  </div>
 </Layout>

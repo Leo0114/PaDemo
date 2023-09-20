@@ -8,14 +8,16 @@ const weeks = await getCollection("weeks");
 ---
 
 <Layout title="Service Weeks">
-  <Fechas />
-  <Weeks weeks={weeks} />
-  <div>
-    <h3
-      class="font-extrabold my-4 text-indigo-400 prose-2xl mx-auto text-center"
-    >
-      Declaración de la misión de Project Amigo
-    </h3>
-    <TimeLine />
+  <div class="px-4 mx-auto md:px6">
+    <Fechas />
+    <Weeks weeks={weeks} />
+    <div>
+      <h3
+        class="font-extrabold my-4 text-indigo-400 prose-2xl mx-auto text-center"
+      >
+        Declaración de la misión de Project Amigo
+      </h3>
+      <TimeLine />
+    </div>
   </div>
 </Layout>
