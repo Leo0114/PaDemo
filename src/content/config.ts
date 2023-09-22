@@ -25,7 +25,24 @@ const weeksCollection = defineCollection({
     }),
 });
 
+const involvedCollection = defineCollection({
+  type: "content",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      cover: image(),
+      coverAlt: z.string(),
+      intro: z.string(),
+      contiene: z.string(),
+      club: z.string(),
+      compromiso: z.string(),
+      ima: image(),
+      imag: image(),
+    }),
+});
+
 export const collections = {
   about: boardCollection,
   weeks: weeksCollection,
+  involved: involvedCollection,
 };
