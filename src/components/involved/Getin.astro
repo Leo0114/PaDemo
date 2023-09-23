@@ -1,8 +1,8 @@
 ---
-import { Image } from "astro:assets";
 import Content from "@components/involved/Content.astro";
 import { getCollection } from "astro:content";
 const involved = await getCollection("involved");
+import ContentTwo from "@components/involved/ContentTwo.astro";
 ---
 
 <section>
@@ -29,5 +29,5 @@ const involved = await getCollection("involved");
     </div>
   </div>
 </section>
-
+<ContentTwo />
 <Content involved={involved} />
