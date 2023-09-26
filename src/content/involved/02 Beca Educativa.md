@@ -2,17 +2,30 @@
 title: "Beca Educativa"
 cover: "./images/edu.webp"
 coverAlt: "Imagen"
-intro: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-reiciendis explicabo quam voluptatem."
-contiene: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-reiciendis explicabo quam voluptatem."
-club: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-reiciendis explicabo quam voluptatem."
-compromiso: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-reiciendis explicabo quam voluptatem."
+intro: " A través de becas y donaciones a nuestro Fondo de Becas, Project Amigo está abriendo un nuevo futuro para estos niños."
+club: "Estos clubes brindan a los estudiantes tutoría y tutoría. Pero sobre todo, nos brindan una forma de mantenernos en estrecho contacto con los estudiantes para que podamos identificar los problemas antes de que ellos llegar a ser tan severo que el estudiante se ve obligado a abandonar la escuela."
+
+contiene:
+  [
+    "Uniforme escolar",
+    "Tasas de inscripción / laboratorio",
+    "Transporte en bus",
+    "Almuerzo nutriciona",
+    "Libros / útiles escolare",
+  ]
+
+compromiso:
+  [
+    "Mantener un GPA de 8.5",
+    "Mínimo de 10 horas de servicio comunitario mensual",
+    "Carta al padrino",
+    "Asistir al club de tareas semanales",
+  ]
 ima: "./images/incent.webp"
 imag: "./images/incent.webp"
 ---
+
+Grado 7 a Grado 12
 
 Las investigaciones abrumadoras muestran que los jóvenes que se gradúan de la escuela secundaria disfrutan de mejores resultados en todas las áreas de sus vidas: salud, relaciones y bienestar financiero, y son más capaces de tomar decisiones que les afecten positivamente a sí mismos, a sus familias y a sus comunidades.
 

@@ -33,11 +33,13 @@ const involvedCollection = defineCollection({
       cover: image(),
       coverAlt: z.string(),
       intro: z.string(),
-      contiene: z.string(),
       club: z.string(),
-      compromiso: z.string(),
+      contiene: z.array(z.string()),
+      compromiso: z.array(z.string()),
       ima: image(),
       imag: image(),
+      CA: z.string().optional(),
+      Texto: z.string().optional(),
     }),
 });
 
