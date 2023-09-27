@@ -3,8 +3,6 @@ title: "Beca Educativa"
 cover: "./images/edu.webp"
 coverAlt: "Imagen"
 intro: " A través de becas y donaciones a nuestro Fondo de Becas, Project Amigo está abriendo un nuevo futuro para estos niños."
-club: "Estos clubes brindan a los estudiantes tutoría y tutoría. Pero sobre todo, nos brindan una forma de mantenernos en estrecho contacto con los estudiantes para que podamos identificar los problemas antes de que ellos llegar a ser tan severo que el estudiante se ve obligado a abandonar la escuela."
-
 contiene:
   [
     "Uniforme escolar",
@@ -23,6 +21,9 @@ compromiso:
   ]
 ima: "./images/incent.webp"
 imag: "./images/incent.webp"
+club: "Estos clubes brindan a los estudiantes tutoría y tutoría. Pero sobre todo, nos brindan una forma de mantenernos en estrecho contacto con los estudiantes para que podamos identificar los problemas antes de que ellos
+
+llegar a ser tan severo que el estudiante se ve obligado a abandonar la escuela."
 ---
 
 Grado 7 a Grado 12

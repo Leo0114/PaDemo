@@ -3,24 +3,20 @@ title: "Beca Universitaria"
 cover: "./images/college.webp"
 coverAlt: "Imagen"
 intro: "Con su apoyo, los graduados de Project Amigo se han convertido en médicos, abogados, maestros, ingenieros y líderes comunitarios."
-club: "Estos clubes brindan a los estudiantes tutoría y tutoría. Pero, sobre todo, nos brindan una forma de mantenernos en contacto cercano con los estudiantes para que podamos identificar los problemas antes de que se vuelvan tan graves que el estudiante se vea obligado a abandonar la escuela."
 contiene:
   [
     "Matrícula",
     "Tarifas de clase y laboratorio",
-    "Transporte en bus",
-    "Libros",
-    "Suministros escolares",
     "Equipo especializado necesario para cada especialidad",
     "Alojamiento y comida en Casa Amiga",
   ]
 
 compromiso:
   [
-    "Mantener un GPA de 8.5",
-    "Mínimo de 10 horas de servicio comunitario mensual",
-    "Carta al padrino",
-    "Asistir al club de tareas semanales",
+    "Mantener un GPA de 8.5.",
+    "Mínimo de 10 horas de servicio comunitario mensual.",
+    "Carta al padrino.",
+    "Asistir al club de tareas semanales.",
   ]
 ima: "./images/incent.webp"
 imag: "./images/incent.webp"
