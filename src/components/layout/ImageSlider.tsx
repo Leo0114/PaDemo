@@ -46,34 +46,9 @@ export default function ImageSlider() {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-  const [touchStartX, setTouchStartX] = useState(null);
-
-  const handleTouchStart = (e) => {
-    setTouchStartX(e.touches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    if (touchStartX === null) return;
-
-    const touchEndX = e.touches[0].clientX;
-    const deltaX = touchStartX - touchEndX;
-
-    if (deltaX > 50) {
-      nextvSlide();
-    } else if (deltaX < -50) {
-      prevSlide();
-    }
-
-    setTouchStartX(null);
-  };
-
   return (
     <div class="max-w-[1400px] mx-auto  px-4  py-12 ">
-      <div
-        className=" h-[480px] w-full  relative group "
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-      >
+      <div className=" h-[480px] w-full  relative group ">
         <div
           loading="lazy"
           alt={slides[currentIndex].title}

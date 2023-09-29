@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions, fade } from "astro:transitions";
+import { ViewTransitions } from "astro:transitions";
 interface Props {
   title: string;
 }
@@ -26,7 +26,7 @@ AstroNav;
     transition:animate="none"
   >
     <AstroNav />
-    <main transition:animate={fade({ duration: "0.3s" })}>
+    <main transition:animate="slide">
       <slot />
     </main>
     <Footer />

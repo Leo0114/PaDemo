@@ -1,14 +1,16 @@
 ---
 import Promo from "@components/aba/Promo.astro";
 import Layout from "../layouts/Layout.astro";
-import ImageSlider from "@components/layout/ImageSlider";
 import Banner from "@components/aba/Banner.astro";
+import SliderSection from "@components/layout/SliderSection.astro";
+import Introduccion from "@components/layout/Introduccion.astro";
 ---
 
 <Layout title="Home">
   <div class="px-4 mx-auto md:px-6">
     <Promo />
-    <ImageSlider client:load />
+    <Introduccion />
+    <SliderSection />
     <Banner />
   </div>
 </Layout>

@@ -1,4 +1,7 @@
 ---
+import logito from "@assets/PaLogo.webp";
+import { Image } from "astro:assets";
+
 const navItems = [
   { title: "Get Involved", path: "/PaDemo/getInvolved" },
   { title: "Service Weeks", path: "/PaDemo/serviceWeeks" },
@@ -11,14 +14,24 @@ const navItems = [
 <footer>
   <div class="container px-6 py-8 mx-auto">
     <div class="flex flex-col items-center text-center">
-      <a class="w-full prose-2xl" href="/PaDemo/">ProjectAmigo</a>
+      <a class="flex items-center" href="/PaDemo/">
+        <span class="prose-2xl">ProjectAmigo</span>
+        <Image
+          class="h-8 w-8 ml-2"
+          src={logito}
+          alt="pa log"
+          loading="lazy"
+          format="avif"
+          quality={"low"}
+        />
+      </a>
     </div>
 
     <div class="flex flex-wrap justify-center mt-6 -mx-4">
       {
         navItems.map((nav) => (
           <a
-            class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-400"
+            class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-sky-500 dark:text-gray-300 dark:hover:text-sky-400"
             href={nav.path}
             aria-label={"link a " + nav.title}
           >
@@ -38,7 +51,7 @@ const navItems = [
       <div class="flex -mx-2">
         <a
           href="#"
-          class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+          class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-sky-500 dark:hover:text-sky-400"
           aria-label="Facebook"
         >
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none">
