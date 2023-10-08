@@ -1,22 +1,185 @@
 ---
-import Botton from "@components/layout/Botton.astro";
+
 ---
 
-<section
-  class="py-6 dark:bg-sky-700 rounded-xl border-sky-900/75 border-2 transition-all duration-300 bg-sky-600/80 text-slate-50"
+<div
+  class="bg-gradient-to-br from-sky-500 to-purple-600 py-16 md:bg-gradient-to-r rounded-lg"
 >
-  <div
-    class="container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 md:px-24 xl:px-48"
-  >
-    <h1 class="text-5xl font-bold leadi text-center">
+  <div class="container m-auto px-6 text-center md:px-12 lg:px-20">
+    <h2 class="mb-8 text-4xl font-bold text-white md:text-4xl">
       ¡Amigos cercanos y lejanos, los niños de Cofradia esperan con ansias la
       alegría de la temporada festiva!
-    </h1>
-    <p class="pt-2 pb-8 text-xl font-medium text-center">
-      Los niños participarán en grupos más pequeños en mini Fiestas de Navidad
-      donde recibirán un obsequio de Papá Noel, zapatos y dulces, ¡gracias por
-      su apoyo y alegría que les brindan!
-    </p>
-    <Botton link="" name="Service Week Schedule" />
+    </h2>
+    <a
+      href="#"
+      class="relative flex h-12 w-full mx-auto items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+    >
+      <span class="relative text-base font-semibold text-purple-600"
+        >Service Week Schedule</span
+      >
+    </a>
   </div>
-</section>
+</div>
+
+<header
+  class="fixed lg:absolute inset-x-0 z-30 border-b border-black/5 bg-white/60 dark:border-white/5 dark:bg-gray-950/60"
+>
+  <nav class="py-3.5 backdrop-blur-lg">
+    <div class="mx-auto px-6 md:px-12 lg:max-w-7xl">
+      <div class="flex flex-col items-center justify-between lg:flex-row">
+        <div
+          class="flex h-max w-full items-center justify-between gap-2 lg:w-auto lg:justify-start"
+        >
+          <a href="/" class="flex items-center gap-2">
+            <svg
+              class="h-8 text-primary dark:text-primaryLight"
+              viewBox="0 0 942 272"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="text-blue-950 dark:text-white"
+                d="M392.603 62.008V102.536H420.075V130.552H392.603V192.024C392.603 197.827 393.963 202.088 396.683 204.808C399.403 207.347 403.664 208.616 409.467 208.616C413.093 208.616 416.72 208.253 420.347 207.528V233.64C415.632 235.635 409.195 236.632 401.035 236.632C388.704 236.632 379.003 233.187 371.931 226.296C364.859 219.224 361.323 209.523 361.323 197.192V130.552H336.843V102.536H343.643C350.352 102.536 355.429 100.632 358.875 96.824C362.32 93.016 364.043 88.0293 364.043 81.864V62.008H392.603ZM432.359 199.096C432.359 187.853 435.986 178.877 443.239 172.168C450.674 165.277 460.375 160.925 472.343 159.112L506.343 153.944C512.871 153.037 516.135 149.864 516.135 144.424C516.135 138.44 514.05 133.635 509.879 130.008C505.709 126.2 499.453 124.296 491.111 124.296C483.133 124.296 476.786 126.563 472.071 131.096C467.357 135.448 464.637 141.16 463.911 148.232L435.079 141.704C436.349 129.736 442.061 119.581 452.215 111.24C462.37 102.717 475.245 98.456 490.839 98.456C510.061 98.456 524.205 103.08 533.271 112.328C542.519 121.576 547.143 133.453 547.143 147.96V213.784C547.143 222.488 547.687 229.56 548.775 235H519.399C518.493 232.28 518.039 226.659 518.039 218.136C509.335 232.099 495.735 239.08 477.239 239.08C463.821 239.08 452.941 235.181 444.599 227.384C436.439 219.405 432.359 209.976 432.359 199.096ZM483.223 214.328C493.015 214.328 500.903 211.699 506.887 206.44C513.053 201 516.135 192.205 516.135 180.056V174.072L481.591 179.24C469.805 181.235 463.911 187.219 463.911 197.192C463.911 201.907 465.634 205.987 469.079 209.432C472.525 212.696 477.239 214.328 483.223 214.328ZM604.325 235H573.045V102.536H604.325V235ZM574.133 70.44C570.144 66.4507 568.149 61.6453 568.149 56.024C568.149 50.4027 570.144 45.5973 574.133 41.608C578.122 37.4373 582.928 35.352 588.549 35.352C594.352 35.352 599.248 37.3467 603.237 41.336C607.226 45.3253 609.221 50.2213 609.221 56.024C609.221 61.6453 607.226 66.4507 603.237 70.44C599.248 74.4293 594.352 76.424 588.549 76.424C582.928 76.424 578.122 74.4293 574.133 70.44ZM664.341 235H632.789V38.072H664.341V235ZM778.227 220.312C775.144 226.115 770.067 230.648 762.995 233.912C756.104 237.176 748.669 238.808 740.691 238.808C725.277 238.808 713.037 233.821 703.971 223.848C695.085 213.875 690.643 201.272 690.643 186.04V102.536H722.195V180.328C722.195 189.213 724.371 196.467 728.723 202.088C733.075 207.709 739.784 210.52 748.851 210.52C757.736 210.52 764.536 207.8 769.251 202.36C774.147 196.92 776.595 189.757 776.595 180.872V102.536H808.147V210.792C808.147 218.771 808.6 226.84 809.507 235H779.315C778.589 231.011 778.227 226.115 778.227 220.312ZM825.051 199.096L852.523 191.48C853.067 197.827 855.696 203.176 860.411 207.528C865.126 211.88 871.472 214.056 879.451 214.056C885.616 214.056 890.422 212.605 893.867 209.704C897.494 206.803 899.307 203.176 899.307 198.824C899.307 191.208 894.139 186.312 883.803 184.136L864.219 179.784C852.795 177.245 844 172.531 837.835 165.64C831.67 158.749 828.587 150.589 828.587 141.16C828.587 129.555 833.302 119.581 842.731 111.24C852.16 102.717 863.675 98.456 877.275 98.456C885.979 98.456 893.686 99.7253 900.395 102.264C907.104 104.803 912.272 108.157 915.899 112.328C919.707 116.317 922.608 120.216 924.603 124.024C926.598 127.832 927.867 131.64 928.411 135.448L901.755 143.064C901.03 137.987 898.672 133.453 894.683 129.464C890.875 125.293 885.072 123.208 877.275 123.208C871.835 123.208 867.302 124.749 863.675 127.832C860.048 130.733 858.235 134.269 858.235 138.44C858.235 145.875 862.678 150.499 871.563 152.312L891.691 156.392C904.022 159.112 913.451 164.008 919.979 171.08C926.507 178.152 929.771 186.675 929.771 196.648C929.771 207.709 925.328 217.592 916.443 226.296C907.739 234.819 895.499 239.08 879.723 239.08C870.656 239.08 862.496 237.72 855.243 235C848.171 232.28 842.55 228.835 838.379 224.664C834.39 220.312 831.216 216.051 828.859 211.88C826.683 207.528 825.414 203.267 825.051 199.096Z"
+                fill="currentColor"></path>
+              <circle
+                cx="126.5"
+                cy="135.5"
+                r="49"
+                stroke="none"
+                stroke-width="11"
+                fill="currentColor"></circle>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M157.616 38.7183C137.547 27.9866 113.297 28.3356 93.5 39.7654L60.0914 59.0538C39.6709 70.8436 27.0914 92.632 27.0914 116.212V154.788C27.0914 178.368 39.6709 200.156 60.0914 211.946L93.5 231.235C113.92 243.024 139.08 243.024 159.5 231.235L192.909 211.946C213.329 200.156 225.909 178.368 225.909 154.788V116.212C225.909 99.106 219.289 82.9431 207.857 70.8562C214.603 65.9281 219.348 58.424 220.644 49.7914C239.072 66.6422 249.909 90.6554 249.909 116.212V154.788C249.909 186.942 232.755 216.654 204.909 232.731L171.5 252.019C143.654 268.096 109.346 268.096 81.5 252.019L48.0914 232.731C20.2453 216.654 3.09137 186.942 3.09137 154.788V116.212C3.09137 84.0576 20.2453 54.3462 48.0914 38.2692L81.5 18.9808C109.138 3.02371 143.143 2.90471 170.876 18.6237C164.141 23.2603 159.27 30.4096 157.616 38.7183Z"
+                fill="currentColor"></path>
+              <circle cx="189" cy="45" r="21" fill="currentColor"></circle>
+            </svg>
+          </a>
+          <button
+            data-controller="hamburger"
+            aria-label="menu"
+            data-hamburger-target="hamburger"
+            class="relative hbr -mb-1.5 -mr-2.5 h-9 w-9 lg:hidden transition duration-300 active:scale-[.8]"
+          >
+            <div
+              data-hamburger-target="line"
+              aria-hidden="true"
+              class="line absolute inset-x-0 mx-auto top-0 translate-y-3 h-[1.2px] w-4 rounded bg-gray-800 transition-all duration-300 dark:bg-white"
+            >
+            </div>
+            <div
+              data-hamburger-target="line"
+              aria-hidden="true"
+              class="line absolute inset-x-0 mx-auto top-0 translate-y-5 h-[1.2px] w-4 rounded bg-gray-800 transition-all duration-300 dark:bg-white"
+            >
+            </div>
+          </button>
+        </div>
+        <div
+          data-active="false"
+          class="flex w-full flex-col gap-6 lg:w-auto lg:flex-row lg:items-center"
+        >
+          <div
+            class="navitems h-0 w-full gap-12 overflow-clip pr-4 transition-[height] duration-[2s] lg:flex lg:h-auto lg:items-center lg:overflow-visible lg:border-r dark:lg:border-white/30"
+            style="height: 0px;"
+          >
+            <div
+              class="gap-12 space-y-8 py-12 text-gray-700 dark:text-gray-200 lg:text-gray-600 lg:dark:text-gray-300 lg:flex lg:space-y-0 lg:py-0"
+            >
+              <div class="relative">
+                <a
+                  class="text-xl hover:text-gray-900 dark:hover:text-white lg:text-sm lg:tracking-wide"
+                  href="/guide">Guide</a
+                >
+              </div>
+              <div
+                class="r-tab gap-12 space-y-8 transition duration-300 lg:flex lg:items-center lg:space-y-0 lg:pr-6"
+              >
+                <div
+                  aria-hidden="true"
+                  class="link-indicator absolute inset-y-0 my-auto hidden h-4 w-3 rounded-full bg-blue-400 opacity-40 blur transition duration-300 dark:bg-secondary lg:block"
+                >
+                </div>
+                <div class="relative">
+                  <a
+                    data-target="templates"
+                    class="r-link text-xl hover:text-gray-900 dark:hover:text-white lg:text-sm lg:tracking-wide"
+                    href="/templates"
+                    >Templates
+                  </a>
+                </div>
+                <div class="relative">
+                  <a
+                    data-target="blocks"
+                    class="r-link text-xl hover:text-gray-900 dark:hover:text-white lg:text-sm lg:tracking-wide"
+                    href="/blocks">Blocks</a
+                  >
+                </div>
+                <div class="relative">
+                  <a
+                    data-target="snippets"
+                    class="r-link text-xl hover:text-gray-900 dark:hover:text-white lg:text-sm lg:tracking-wide"
+                    href="./#snippets">Snippets</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-controller="themeSwitcher"
+            class="absolute right-[4rem] top-[.9rem] flex gap-4 md:right-24 lg:relative lg:right-0 lg:top-0 lg:items-center"
+          >
+            <a
+              href="https://github.com/tailus-ui"
+              class="group relative flex h-9 w-9 rounded-full transition duration-500 hover:bg-blue-950/5 dark:hover:bg-white/10"
+            >
+              <svg
+                class="m-auto h-5 w-5 fill-gray-500 group-hover:fill-gray-950 dark:fill-white/70 dark:group-hover:fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                ></path>
+              </svg>
+            </a>
+            <div>
+              <button
+                data-themeswitcher-target="switcher"
+                class="switcher group relative flex h-9 w-9 rounded-full transition duration-500 hover:bg-gray-950/5 dark:hover:bg-white/10"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="transition absolute inset-0 m-auto h-5 w-5 rotate-0 scale-0 fill-white/70 opacity-0 duration-500 group-hover:opacity-100 dark:order-1 dark:rotate-180 dark:scale-100 dark:opacity-100 dark:group-hover:fill-yellow-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                  ></path>
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="transition absolute inset-0 m-auto h-5 w-5 rotate-0 scale-95 fill-gray-500 duration-500 group-hover:fill-blue-950 dark:-rotate-180 dark:scale-0 dark:opacity-0 dark:group-hover:fill-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                  ></path>
+                  <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
